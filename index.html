@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -283,11 +283,11 @@
   }
 </style>
 </head>
-<body>
+<body class="en">
 
 <nav class="lang-bar">
-  <button id="btn-it" class="active" onclick="setLang('it')">IT</button>
-  <button id="btn-en" onclick="setLang('en')">EN</button>
+  <button id="btn-it" onclick="setLang('it')">IT</button>
+  <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
 </nav>
 
 <div class="wrap">
@@ -303,7 +303,7 @@
     </h1>
     <p class="lede">
       <span data-it>Quasi 5 anni a progettare automazioni che fanno risparmiare tempo e risorse alle aziende. Specializzato in <strong>UiPath</strong>, integrazione <strong>SAP</strong> e automazione di processi di business — con soluzioni di <strong>AI</strong> integrate dove servono.</span>
-      <span data-en>Almost 5 years designing automations that save companies time and resources. Specialized in <strong>UiPath</strong>, <strong>SAP</strong> integration, and business process automation — with <strong>AI</strong> solutions built in where they matter.</span>
+      <span data-en>Almost 5 years building automations that hand companies back their time. Deep in <strong>UiPath</strong>, <strong>SAP</strong> integration, and end-to-end business process automation — with <strong>AI</strong> dropped in where it earns its place.</span>
     </p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">
@@ -320,17 +320,17 @@
       <div class="card">
         <div class="num">01</div>
         <h3><span data-it>Automazione RPA</span><span data-en>RPA Automation</span></h3>
-        <p><span data-it>Costruisco bot UiPath che gestiscono processi ripetitivi end-to-end, senza errori e senza pause.</span><span data-en>I build UiPath bots that handle repetitive processes end-to-end — no errors, no breaks.</span></p>
+        <p><span data-it>Costruisco bot UiPath che gestiscono processi ripetitivi end-to-end, senza errori e senza pause.</span><span data-en>I build UiPath bots that run repetitive processes end-to-end — no slip-ups, no coffee breaks.</span></p>
       </div>
       <div class="card">
         <div class="num">02</div>
         <h3><span data-it>Integrazione SAP</span><span data-en>SAP Integration</span></h3>
-        <p><span data-it>Automazioni stabili su SAP UI5/Fiori, anche dove popup e interfacce ostili fanno fallire gli strumenti standard.</span><span data-en>Stable automations on SAP UI5/Fiori, even where popups and hostile interfaces break standard tools.</span></p>
+        <p><span data-it>Automazioni stabili su SAP UI5/Fiori, anche dove popup e interfacce ostili fanno fallire gli strumenti standard.</span><span data-en>Rock-solid automations on SAP UI5/Fiori — even where popups and stubborn interfaces make standard tools give up.</span></p>
       </div>
       <div class="card">
         <div class="num">03</div>
         <h3><span data-it>Tool Python su misura</span><span data-en>Custom Python Tools</span></h3>
-        <p><span data-it>Script e applicativi compilati per esigenze specifiche: gestione file, automazioni, utility pronte all'uso.</span><span data-en>Compiled scripts and apps for specific needs: file handling, automations, ready-to-use utilities.</span></p>
+        <p><span data-it>Script e applicativi compilati per esigenze specifiche: gestione file, automazioni, utility pronte all'uso.</span><span data-en>Compiled scripts and apps for the jobs no off-the-shelf tool covers: file wrangling, automations, utilities that just work.</span></p>
       </div>
     </div>
   </section>
@@ -369,7 +369,7 @@
   <section id="contact">
     <div class="contact-box">
       <h2><span data-it>Hai un processo da automatizzare?</span><span data-en>Got a process to automate?</span></h2>
-      <p><span data-it>Disponibile per progetti da remoto. Scrivimi e vediamo insieme cosa si può fare.</span><span data-en>Available for remote projects. Drop me a line and let's see what we can build.</span></p>
+      <p><span data-it>Disponibile per progetti da remoto. Scrivimi e vediamo insieme cosa si può fare.</span><span data-en>Available for remote projects. Drop me a line and let's figure out what we can build.</span></p>
       <div class="contact-links">
         <a href="mailto:domenico.catalano08@gmail.com" class="btn btn-primary">✉ Email</a>
         <a href="https://www.linkedin.com/in/domenico-catalano/" target="_blank" rel="noopener" class="btn btn-ghost">in / LinkedIn</a>
@@ -391,8 +391,7 @@
     document.getElementById('btn-it').classList.toggle('active', lang === 'it');
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   }
-  // optional: respect browser language on first load
-  if ((navigator.language || '').slice(0,2) === 'en') setLang('en');
+  // default: English for everyone. User can switch with the IT/EN buttons.
 </script>
 
 </body>
